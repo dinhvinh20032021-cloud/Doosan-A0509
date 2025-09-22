@@ -226,6 +226,12 @@ blendType: 0
 syncType: 0"
 ```
 ___
+## 📹 Chạy thực nghiệm bài toán tránh vật cản sử dụng thuật toán RRT
+
+[![Chạy thử RRT](https://img.youtube.com/vi/losfYWbtjIg/0.jpg)](https://youtube.com/shorts/losfYWbtjIg)
+
+Video mô tả quá trình robot sử dụng RRT để lập kế hoạch đường đi và tránh vật cản trong mô phỏng.
+
 # manuals
 
 [Manual(Kor)](http://wiki.ros.org/doosan-robotics?action=AttachFile&do=get&target=Doosan_Robotics_ROS_Manual_ver1.12_20200522A%28Kor.%29.pdf)
