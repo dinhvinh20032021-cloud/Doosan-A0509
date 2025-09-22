@@ -226,7 +226,7 @@ blendType: 0
 syncType: 0"
 ```
 ___
-## 📂 Video tham khảo quá trình làm
+## 📂 Video tham khảo quá trình làm mô phỏng vật và sử dụng các thuật toán
 
 [Video tham khảo quá trình làm](https://drive.google.com/drive/folders/1Q3BMmdfDaVXjt78rGC0YccOj2JgE2R-U?usp=drive_link)
 
