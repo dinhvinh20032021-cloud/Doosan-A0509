@@ -226,8 +226,13 @@ blendType: 0
 syncType: 0"
 ```
 ___
+## 📂 Video tham khảo quá trình làm
+
+[Video tham khảo quá trình làm](https://drive.google.com/drive/folders/1Q3BMmdfDaVXjt78rGC0YccOj2JgE2R-U?usp=drive_link)
+
 ## 📹 Chạy thực nghiệm bài toán tránh vật cản sử dụng thuật toán RRT
 
+___
 [![Chạy thử RRT](https://img.youtube.com/vi/losfYWbtjIg/0.jpg)](https://youtube.com/shorts/losfYWbtjIg)
 
 Video mô tả quá trình robot sử dụng RRT để lập kế hoạch đường đi và tránh vật cản trong mô phỏng.
