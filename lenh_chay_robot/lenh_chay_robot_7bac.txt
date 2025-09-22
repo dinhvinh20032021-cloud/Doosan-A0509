@@ -1,0 +1,45 @@
+//ws_moveit build
+source /opt/ros/noetic/setup.bash
+source ~/ws_moveit/devel/setup.bash
+
+//fix loi lenh roslaunch panda_moveit_config demo.launch khi mo lai ws_moveit lam bai toan pick_place 
+cd ~/ws_moveit/src
+# Xóa nếu còn folder cũ gây lỗi
+rm -rf franka_ros
+# Clone lại từ repo chính
+git clone -b noetic-devel https://github.com/frankaemika/franka_ros.git
+
+cd ~/ws_moveit
+catkin clean -y   # nếu bạn dùng catkin_tools
+catkin build
+source devel/setup.bash
+
+//fix loi lenh rosrun moveit_tutorials pick_place_tutorial hi mo lai ws_moveit lam bai toan pick_place 
+cd ~/ws_moveit/src
+ls moveit_tutorials
+
+rm -rf moveit_tutorials
+
+git clone https://github.com/ros-planning/moveit_tutorials.git
+cd moveit_tutorials
+
+cd ~/ws_moveit
+catkin build
+source devel/setup.bash
+
+
+//bai toan pick and place -----> moveit
+roscore
+roslaunch panda_moveit_config demo.launch
+rosrun moveit_tutorials pick_place_tutorial
+
+// file code goc bai toan pick and place -----> moveit
+cd ~/ws_moveit/src/moveit_tutorials/doc/pick_place/src 
+
+//quy trinh gap vat ----->rviz
+roslaunch moveit_task_constructor_demo demo.launch
+//chay lan luot tung lenh de xem
+rosrun moveit_task_constructor_demo cartesian
+rosrun moveit_task_constructor_demo modular
+roslaunch moveit_task_constructor_demo pickplace.launch
+
