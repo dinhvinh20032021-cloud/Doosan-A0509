@@ -1,7 +1,0 @@
-<launch>
-  <!-- Node Python dùng PlanningSceneInterface để add mesh -->
-  <node pkg="my_table_description"
-        type="publish_table.py"
-        name="publish_table"
-        output="screen"/>
-</launch>
